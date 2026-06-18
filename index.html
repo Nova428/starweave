@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Starweaver</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+color:white;
+
+background:linear-gradient(135deg,#050816,#0c1230,#170f3f);
+
+line-height:1.6;
+
+overflow-x:hidden;
+
+}
+
+#stars{
+
+position:fixed;inset:0;z-index:-1;
+
+background:
+
+radial-gradient(white 1px, transparent 1px),
+
+radial-gradient(#f8d66d 1px, transparent 1px);
+
+background-size:50px 50px,100px 100px;
+
+animation:drift 60s linear infinite;
+
+opacity:.6;
+
+}
+
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(-100px)}}
+
+header{
+
+position:sticky;top:0;
+
+display:flex;justify-content:space-between;align-items:center;
+
+padding:18px 8%;
+
+background:rgba(0,0,0,.3);backdrop-filter:blur(10px);
+
+}
+
+.logo{font-family:Cinzel,serif;color:#f8d66d;font-size:1.8rem;font-weight:700}
+
+nav a{color:white;text-decoration:none;margin-left:18px}
+
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
+
+.hero h1{font-family:Cinzel,serif;font-size:4rem;color:#f8d66d}
+
+.hero p{max-width:700px;margin:20px auto}
+
+.btn{
+
+display:inline-block;background:#f8d66d;color:#08111f;
+
+padding:14px 30px;border-radius:999px;text-decoration:none;font-weight:700
+
+}
+
+section{padding:80px 8%}
+
+.section-title{font-family:Cinzel,serif;color:#f8d66d;text-align:center;margin-bottom:35px;font-size:2.3rem}
+
+.features,.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+
+.card,.step,.price-box{
+
+background:#111d31;padding:25px;border-radius:18px;
+
+box-shadow:0 0 20px rgba(248,214,109,.1);
+
+border:1px solid rgba(248,214,109,.15);
+
+}
+
+.card h3,.step h3{color:#f8d66d;margin-bottom:10px}
+
+.assessment-form{max-width:700px;margin:auto;display:flex;flex-direction:column;gap:15px}
+
+.assessment-form input,.assessment-form select,.assessment-form textarea{
+
+padding:14px;border-radius:12px;border:none
+
+}
+
+.pricing{display:flex;justify-content:center}
+
+.price-box{max-width:500px;text-align:center}
+
+.price{font-size:3rem;color:#f8d66d}
+
+.price-box ul{list-style:none;margin:20px 0}
+
+footer{text-align:center;padding:40px;background:#050b15;color:#bbb}
+
+@media(max-width:768px){.hero h1{font-size:2.5rem} nav{display:none}}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+
+
+<header>
+
+<div class="logo">✦ Starweaver</div>
+
+<nav>
+
+<a href="#assessment">Assessment</a>
+
+<a href="#blueprint">Blueprint</a>
+
+<a href="#dashboard">Dashboard</a>
+
+<a href="#pricing">Pricing</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>Weave Your Future Into Reality</h1>
+
+<p>Starweaver creates personalized Lifestyle Blueprints that transform goals into routines, habits, systems, and environments that make success easier.</p>
+
+<a class="btn" href="#assessment">Create My Blueprint</a>
+
+</div>
+
+</section>
+
+
+
+<section id="assessment">
+
+<h2 class="section-title">Begin the Starweaver Assessment</h2>
+
+<form class="assessment-form">
+
+<input type="text" placeholder="What is your primary goal?">
+
+<select>
+
+<option>Student</option>
+
+<option>Professional</option>
+
+<option>Entrepreneur</option>
+
+<option>Creator</option>
+
+</select>
+
+<textarea rows="5" placeholder="Describe your biggest challenge"></textarea>
+
+<button class="btn" type="button">Generate Blueprint</button>
+
+</form>
+
+</section>
+
+
+
+<section id="blueprint">
+
+<h2 class="section-title">Your Personalized Lifestyle Blueprint</h2>
+
+<div class="features">
+
+<div class="card"><h3>🎯 Goal Breakdown</h3><p>Turn ambitions into milestones, weekly targets and daily actions.</p></div>
+
+<div class="card"><h3>⏰ Daily Routine</h3><p>A schedule tailored to your responsibilities and energy levels.</p></div>
+
+<div class="card"><h3>🌱 Habit Plan</h3><p>Build consistency using proven habit systems.</p></div>
+
+<div class="card"><h3>🖥 Workspace Guide</h3><p>Create an environment designed for focus and productivity.</p></div>
+
+<div class="card"><h3>📋 Accountability Checklist</h3><p>Weekly reviews and progress tracking.</p></div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2 class="section-title">Destiny Blueprint Preview</h2>
+
+<div class="card">
+
+<h3>Goal Breakdown</h3>
+
+<p>Become top 5% in your chosen field within 12 months.</p>
+
+<h3>Daily Routine</h3>
+
+<p>Morning planning • Deep work block • Evening review.</p>
+
+<h3>Habit Plan</h3>
+
+<p>Read daily, exercise regularly, and complete one focused work session.</p>
+
+<a class="btn" href="#">Download PDF Blueprint</a>
+
+</div>
+
+</section>
+
+
+
+<section id="dashboard">
+
+<h2 class="section-title">Weekly Accountability</h2>
+
+<div class="features">
+
+<div class="card"><h3>Monday</h3><input type="checkbox"> Deep Work Session</div>
+
+<div class="card"><h3>Tuesday</h3><input type="checkbox"> Exercise 30 Minutes</div>
+
+<div class="card"><h3>Wednesday</h3><input type="checkbox"> Review Goals</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2 class="section-title">Habit Streaks</h2>
+
+<div class="card">
+
+<h3>🔥 Reading</h3>
+
+<p>Current Streak: <strong>14 Days</strong></p>
+
+</div>
+
+</section>
+
+
+
+<section id="pricing">
+
+<h2 class="section-title">Begin Your Journey</h2>
+
+<div class="pricing">
+
+<div class="price-box">
+
+<h3>Lifestyle Blueprint</h3>
+
+<div class="price">₹299</div>
+
+<ul>
+
+<li>Goal Breakdown</li>
+
+<li>Daily Routine</li>
+
+<li>Habit Plan</li>
+
+<li>Workspace Optimization</li>
+
+<li>Weekly Accountability Checklist</li>
+
+</ul>
+
+<a class="btn" href="#">Generate My Blueprint</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<h3 style="color:#f8d66d">STARWEAVER</h3>
+
+<p>Weave Your Future Into Reality</p>
+
+<p>© 2026 Starweaver</p>
+
+</footer>
+
+</body>
+
+</html><!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Starweaver</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+color:white;
+
+background:linear-gradient(135deg,#050816,#0c1230,#170f3f);
+
+line-height:1.6;
+
+overflow-x:hidden;
+
+}
+
+#stars{
+
+position:fixed;inset:0;z-index:-1;
+
+background:
+
+radial-gradient(white 1px, transparent 1px),
+
+radial-gradient(#f8d66d 1px, transparent 1px);
+
+background-size:50px 50px,100px 100px;
+
+animation:drift 60s linear infinite;
+
+opacity:.6;
+
+}
+
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(-100px)}}
+
+header{
+
+position:sticky;top:0;
+
+display:flex;justify-content:space-between;align-items:center;
+
+padding:18px 8%;
+
+background:rgba(0,0,0,.3);backdrop-filter:blur(10px);
+
+}
+
+.logo{font-family:Cinzel,serif;color:#f8d66d;font-size:1.8rem;font-weight:700}
+
+nav a{color:white;text-decoration:none;margin-left:18px}
+
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
+
+.hero h1{font-family:Cinzel,serif;font-size:4rem;color:#f8d66d}
+
+.hero p{max-width:700px;margin:20px auto}
+
+.btn{
+
+display:inline-block;background:#f8d66d;color:#08111f;
+
+padding:14px 30px;border-radius:999px;text-decoration:none;font-weight:700
+
+}
+
+section{padding:80px 8%}
+
+.section-title{font-family:Cinzel,serif;color:#f8d66d;text-align:center;margin-bottom:35px;font-size:2.3rem}
+
+.features,.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+
+.card,.step,.price-box{
+
+background:#111d31;padding:25px;border-radius:18px;
+
+box-shadow:0 0 20px rgba(248,214,109,.1);
+
+border:1px solid rgba(248,214,109,.15);
+
+}
+
+.card h3,.step h3{color:#f8d66d;margin-bottom:10px}
+
+.assessment-form{max-width:700px;margin:auto;display:flex;flex-direction:column;gap:15px}
+
+.assessment-form input,.assessment-form select,.assessment-form textarea{
+
+padding:14px;border-radius:12px;border:none
+
+}
+
+.pricing{display:flex;justify-content:center}
+
+.price-box{max-width:500px;text-align:center}
+
+.price{font-size:3rem;color:#f8d66d}
+
+.price-box ul{list-style:none;margin:20px 0}
+
+footer{text-align:center;padding:40px;background:#050b15;color:#bbb}
+
+@media(max-width:768px){.hero h1{font-size:2.5rem} nav{display:none}}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+
+
+<header>
+
+<div class="logo">✦ Starweaver</div>
+
+<nav>
+
+<a href="#assessment">Assessment</a>
+
+<a href="#blueprint">Blueprint</a>
+
+<a href="#dashboard">Dashboard</a>
+
+<a href="#pricing">Pricing</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>Weave Your Future Into Reality</h1>
+
+<p>Starweaver creates personalized Lifestyle Blueprints that transform goals into routines, habits, systems, and environments that make success easier.</p>
+
+<a class="btn" href="#assessment">Create My Blueprint</a>
+
+</div>
+
+</section>
+
+
+
+<section id="assessment">
+
+<h2 class="section-title">Begin the Starweaver Assessment</h2>
+
+<form class="assessment-form">
+
+<input type="text" placeholder="What is your primary goal?">
+
+<select>
+
+<option>Student</option>
+
+<option>Professional</option>
+
+<option>Entrepreneur</option>
+
+<option>Creator</option>
+
+</select>
+
+<textarea rows="5" placeholder="Describe your biggest challenge"></textarea>
+
+<button class="btn" type="button">Generate Blueprint</button>
+
+</form>
+
+</section>
+
+
+
+<section id="blueprint">
+
+<h2 class="section-title">Your Personalized Lifestyle Blueprint</h2>
+
+<div class="features">
+
+<div class="card"><h3>🎯 Goal Breakdown</h3><p>Turn ambitions into milestones, weekly targets and daily actions.</p></div>
+
+<div class="card"><h3>⏰ Daily Routine</h3><p>A schedule tailored to your responsibilities and energy levels.</p></div>
+
+<div class="card"><h3>🌱 Habit Plan</h3><p>Build consistency using proven habit systems.</p></div>
+
+<div class="card"><h3>🖥 Workspace Guide</h3><p>Create an environment designed for focus and productivity.</p></div>
+
+<div class="card"><h3>📋 Accountability Checklist</h3><p>Weekly reviews and progress tracking.</p></div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2 class="section-title">Destiny Blueprint Preview</h2>
+
+<div class="card">
+
+<h3>Goal Breakdown</h3>
+
+<p>Become top 5% in your chosen field within 12 months.</p>
+
+<h3>Daily Routine</h3>
+
+<p>Morning planning • Deep work block • Evening review.</p>
+
+<h3>Habit Plan</h3>
+
+<p>Read daily, exercise regularly, and complete one focused work session.</p>
+
+<a class="btn" href="#">Download PDF Blueprint</a>
+
+</div>
+
+</section>
+
+
+
+<section id="dashboard">
+
+<h2 class="section-title">Weekly Accountability</h2>
+
+<div class="features">
+
+<div class="card"><h3>Monday</h3><input type="checkbox"> Deep Work Session</div>
+
+<div class="card"><h3>Tuesday</h3><input type="checkbox"> Exercise 30 Minutes</div>
+
+<div class="card"><h3>Wednesday</h3><input type="checkbox"> Review Goals</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2 class="section-title">Habit Streaks</h2>
+
+<div class="card">
+
+<h3>🔥 Reading</h3>
+
+<p>Current Streak: <strong>14 Days</strong></p>
+
+</div>
+
+</section>
+
+
+
+<section id="pricing">
+
+<h2 class="section-title">Begin Your Journey</h2>
+
+<div class="pricing">
+
+<div class="price-box">
+
+<h3>Lifestyle Blueprint</h3>
+
+<div class="price">₹299</div>
+
+<ul>
+
+<li>Goal Breakdown</li>
+
+<li>Daily Routine</li>
+
+<li>Habit Plan</li>
+
+<li>Workspace Optimization</li>
+
+<li>Weekly Accountability Checklist</li>
+
+</ul>
+
+<a class="btn" href="#">Generate My Blueprint</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<h3 style="color:#f8d66d">STARWEAVER</h3>
+
+<p>Weave Your Future Into Reality</p>
+
+<p>© 2026 Starweaver</p>
+
+</footer>
+
+</body>
+
+</html>
